@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargopress from themeforest</title>
+    <title>Themeforest</title>
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap-5.0.2/css/bootstrap.min.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <header>
+
+      <!-- Header -->
       <div class="container p-3">
         <div class="row align-items-center">
-
             <div class="col-md-4 d-flex">
               <div class="h1 align-self-end m-2">
-                <i class="fas fa-certificate text-danger"></i>
+                  <i class="fas fa-certificate text-danger"></i>
               </div>
                           
               <div>
-                <h3 class="mb-0">CARGO<span class="text-muted">PRESS</span></h3>
-                <span class="text-muted">Logistic Wordpress Theme</span>
+                <a href="#" style="text-decoration: none; color: black;">
+                  <h3 class="mb-0">CARGO<span class="text-muted">PRESS</span></h3>
+                  <span class="text-muted">Logistic Wordpress Theme</span>
+                </a>
               </div>
             </div>
 
@@ -32,23 +38,28 @@
               <p class="text-muted mb-0"><i class="fas fa-headphones text-danger"></i> Call Us Anytime</p>
               <span>1-888-123-4567</span>
             </div>
+
             <div class="col-md-2">
               <p class="text-muted mb-0"><i class="far fa-clock text-danger"></i> Opening Time</p>
               <span>08:00 - 18:00</span>
             </div>
+
             <div class="col-md-2">
               <p class="text-muted mb-0"><i class="far fa-envelope text-danger"></i> Email Us</p>
               <span>info@cargopress.io</span>
             </div>
+
             <div class="col-md-2">
               <div class="d-flex justify-content-end">
-                <button class="btn btn-success text-uppercase">Buy Now</button>
+                <a href="#" class="btn btn-success">BUY NOW</a>
               </div>
             </div>
         </div>
       </div>
+      <!-- Header -->
+
       <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
                 <!-- <a class="navbar-brand" href="#">CARGOPRESS</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,22 +98,22 @@
                       <a class="nav-link" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">Contact Us</a>
+                      <a class="nav-link" href="#">Contact Us</a>
                     </li>
                   </ul>
                   <div class="d-flex">
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-facebook-square"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-wordpress"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-wordpress"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-youtube"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
                       </li>
                     </ul>
                   </div>
@@ -114,18 +125,160 @@
               </div>
           </div>
         </nav>
+        <!-- Navigation End -->
     </header>
 
     <section>
+      <!-- Slider -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              </div>
+              
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner bg-dark">
+
+                <div class="carousel-item active">
+                  <img src="./img/slider_1.jpg" alt="slider-1" class="d-block" style="width:100%; height:400px; opacity: 1;">
+                  <div class="carousel-caption">
+                    <h2>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</h2>
+                    <p>
+                      Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance.
+                    </p>
+                    <a href="#" class="btn btn-success text-uppercase">Buy Theme For $79</a>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/slider_2.jpg" alt="slider-2" class="d-block" style="width:100%; height:400px;opacity: 1;">
+                  <div class="carousel-caption">
+                    <h2>CRANE TO TRAIN, WE DO EVERYTHING</h2>
+                    <p>
+                      Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance.
+                    </p>
+                    <a href="#" class="btn btn-success">BUY THEME FOR $79</a>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./img/slider_3.jpg" alt="Slider-3" class="d-block" style="width:100%; height:400px; opacity:1;">
+                  <div class="carousel-caption">
+                    <h2>GROUND OR AIR, THERE IS NO STOPPING FOR US</h2>
+                    <p>
+                      Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance.
+                    </p>
+                    <a href="#" class="btn btn-success">BUY THEME FOR $79</a>
+                  </div>
+                </div>
+
+              </div>
+              
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+      <!-- Slider -->
+    </section>
+
+    <section>
+      <div class="container overflow-hidden">
+        <div class="row gx-4 my-5">
+
+          <div class="col-md-3 h-100">
+
+            <div class="card shadow">
+              
+              <div class="card-body">
+                <h5 class="card-title text-dark mb-4">HELLO THERE AND WELCOME</h5>
+                <p class="card-text text-muted">
+                  Our warehousing services are known nationwide to be one of the most reliable, safe and affordable, because we take pride in delivering the best of warehousing services, at the most reasonable prices. Our own warehouses, as well as our partner's warehouses are located at strategic locations to ensure that there is no additional cost.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link text-success text-decoration-none">MORE ABOUT US</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 h-100">
+
+            <div class="card shadow">
+              <img class="card-img-top" src="./img/32.jpg" alt="Card image">
+              
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-dark">
+                  <h5 class="card-title mb-4">CARGO</h5>
+                </a>
+                <p class="card-text text-muted">
+                  Team of cargo experts are always available to help you with any queries you might have, or if you want to consult in length your logistic requirements. We would study your requirements and provide you with a quote that would not only suit your …
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link text-success text-decoration-none">MORE ABOUT US</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 h-100">
+
+            <div class="card shadow">
+              <img class="card-img-top" src="./img/30.jpg" alt="Card Image">
+
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-dark">
+                  <h5 class="card-title mb-4">LOGISTIC SERVICE</h5>
+                </a>
+                <p class="card-text text-muted">
+                  We provide logistic services in the nation, whether it is freight transportation, supply chain solutions, warehousing and distribution, customer resource area services, customs, security and insurance, temperature controlled logistics, industry …
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link text-success text-decoration-none">MORE ABOUT US</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 h-100">
+
+            <div class="card shadow">
+              <img src="./img/4.jpg" alt="Card image" class="card-img-top">
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-dark">
+                  <h5 class="card-title mb-4">STORAGE</h5>
+                </a>
+                <p class="card-text text-muted">
+                  We take pride in catering to a broad range of clientele throughout the country with our warehousing services, which is comprehensive, reliable and flexible - qualities that are essential to help businesses in this market. Our experienced experts …
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link text-success text-decoration-none">MORE ABOUT US</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <footer>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
     <script src="./js/jquery.js"></script>
+    <script src="./css/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    
 </body>
 </html>
