@@ -26,3 +26,20 @@
     border-bottom-right-radius: 2px;
     line-height: 56px;
 }
+
+.card-service:hover .card-icon{
+    color:#95ae47 !important;
+    
+}
+
+.card-service:hover{
+    border-bottom-color: #95ae47 !important;
+}
+
+.card-partners:hover{
+    border-bottom-color: #95ae47 !important;
+}
+
+.card-partners:hover .partners-img{
+    opacity: 1 !important;
+}
