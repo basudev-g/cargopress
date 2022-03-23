@@ -43,3 +43,7 @@
 .card-partners:hover .partners-img{
     opacity: 1 !important;
 }
+
+.testimonial-block{
+    display: block !important;
+}

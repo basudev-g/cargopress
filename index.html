@@ -47,8 +47,8 @@
             </div>
 
             <div class="col-md-2">
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-success">BUY NOW</a>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success btn-sm px-3"><span class="small fw-bold">BUY THEME FOR $79</span></a>
               </div>
             </div>
         </div>
@@ -88,16 +88,16 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="./pages/about-us.html">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="./pages/shop.html">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="./pages/news.html">News</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="./pages/contact-us.html">Contact Us</a>
                   </li>
                 </ul>
                 <div class="d-flex">
@@ -337,7 +337,7 @@
                               </p>
                           </div>
                           <div class="mr-auto">
-                              <i class="fa-solid card-icon fa-globe text-muted fs-1 fw-bold mx-3"></i>
+                              <i class="fa-solid card-icon fa-earth-asia text-muted fs-1 fw-bold mx-3"></i>
                           </div>
                       </div>
                       <a href="#" class="stretched-link"></a>
@@ -615,28 +615,44 @@
           <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="fw-bolder text-uppercase">Testimonial</h1>
             <div>
-                <span class="p-2" role="button" style="background-color: white;"><i class="fa-solid fa-caret-left link-dark"></i></span>
-                <span class="p-2" role="button" style="background-color: white;"><i class="fa-solid fa-caret-right link-dark"></i></span>
+                <button class="p-2" id="#prev" style="background-color: white;"><i class="fa-solid fa-caret-left link-dark"></i></button>
+                <button class="p-2 next" id="#next" style="background-color: white;"><i class="fa-solid fa-caret-right link-dark"></i></button>
             </div>
           </div>
           <div>
             <div class="row">
               <div class="col-md-6">
-                <div class="card w-100 bg-light p-3" style="height: 100px;">
-                  <p class="text-muted small testimonial ms-4">
+                <div class="card w-100 bg-light p-3 overflow-hidden" style="height: 100px;">
+                  <p class="text-muted small testimonial testimonial-1 ms-4">
                     But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
                   </p>
                 </div>
                 <p class="fw-bold mt-4">Frank Martin <i class="text-warning small">Transporter</i></p>
               </div>
               <div class="col-md-6">
-                  <div class="card w-100 bg-light p-3" style="height: 100px;">
-                    <p class="text-muted small testimonial ms-4">
+                  <div class="card w-100 bg-light p-3 overflow-hidden" style="height: 100px;">
+                    <p class="text-muted small testimonial testimonial-2 ms-4">
                       But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
                     </p>
                   </div>
                   <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
               </div>
+              <div class="col-md-6 testimonialhide">
+                <div class="card w-100 bg-light p-3" style="height: 100px;">
+                  <p class="text-muted small testimonial ms-4">
+                    But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                  </p>
+                </div>
+                <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
+            </div>
+            <div class="col-md-6 testimonialhide">
+              <div class="card w-100 bg-light p-3 " style="height: 100px;">
+                <p class="text-muted small testimonial ms-4">
+                  But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                </p>
+              </div>
+              <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
+          </div>
             </div>
           </div>
         </div>
@@ -852,6 +868,16 @@
     <script src="./js/jquery.js"></script>
     <script src="./css/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".testimonialhide").hide();
+        $(".next").click(function(){
+          $(".testimonialhide").toggle();
+        });
+       
+      })
+    </script>
     
 </body>
 </html>
