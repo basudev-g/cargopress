@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Themeforest</title>
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/OwlCarousel/dist/assets/owl.theme.default.min.css">
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -615,43 +619,43 @@
           <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="fw-bolder text-uppercase">Testimonial</h1>
             <div>
-                <button class="p-2" id="#prev" style="background-color: white;"><i class="fa-solid fa-caret-left link-dark"></i></button>
-                <button class="p-2 next" id="#next" style="background-color: white;"><i class="fa-solid fa-caret-right link-dark"></i></button>
+                <button class="p-2 prev" style="background-color: white;"><i class="fa-solid fa-caret-left link-dark"></i></button>
+                <button class="p-2 next" style="background-color: white;"><i class="fa-solid fa-caret-right link-dark"></i></button>
             </div>
           </div>
           <div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 testimonial-1">
                 <div class="card w-100 bg-light p-3 overflow-hidden" style="height: 100px;">
-                  <p class="text-muted small testimonial testimonial-1 ms-4">
-                    But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                  <p class="text-muted small testimonial ms-4">
+                    But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.1
                   </p>
                 </div>
-                <p class="fw-bold mt-4">Frank Martin <i class="text-warning small">Transporter</i></p>
+                <p class="fw-bold mt-4">Frank Martin <i class="text-muted small">Transporter</i></p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6  testimonial-2">
                   <div class="card w-100 bg-light p-3 overflow-hidden" style="height: 100px;">
-                    <p class="text-muted small testimonial testimonial-2 ms-4">
-                      But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                    <p class="text-muted small testimonial ms-4">
+                      But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.2
                     </p>
                   </div>
-                  <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
+                  <p class="fw-bold mt-4">Martin Frank <i class="text-muted small">Transporter</i></p>
               </div>
-              <div class="col-md-6 testimonialhide">
+              <div class="col-md-6 testimonial-3" style="display: none;">
                 <div class="card w-100 bg-light p-3" style="height: 100px;">
                   <p class="text-muted small testimonial ms-4">
-                    But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                    But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.3
                   </p>
                 </div>
-                <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
+                <p class="fw-bold mt-4">Martin Frank <i class="text-muted small">Transporter</i></p>
             </div>
-            <div class="col-md-6 testimonialhide">
+            <div class="col-md-6 testimonial-4" style="display: none;">
               <div class="card w-100 bg-light p-3 " style="height: 100px;">
                 <p class="text-muted small testimonial ms-4">
-                  But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.
+                  But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.4
                 </p>
               </div>
-              <p class="fw-bold mt-4">Martin Frank <i class="text-warning small">Transporter</i></p>
+              <p class="fw-bold mt-4">Martin Frank <i class="text-muted small">Transporter</i></p>
           </div>
             </div>
           </div>
@@ -853,6 +857,7 @@
     </footer>
     <!-- section 14 end-->
 
+    <!-- Google Map Script -->
     <script>
     function myMap() {
     var mapProp= {
@@ -867,14 +872,85 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./css/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./css/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
 
+    <!-- Testimonial Script -->
     <script>
       $(document).ready(function(){
-        $(".testimonialhide").hide();
-        $(".next").click(function(){
-          $(".testimonialhide").toggle();
-        });
+        // $(".testimonialhide").hide();
+        var testimonial = ['.testimonial-1', '.testimonial-2', '.testimonial-3', '.testimonial-4'];
+        var i=0;
+        // for (i; i < testimonial.length; i++) {
+        //   if(i=1){
+        //     $(testimonial[0],testimonial[1]).show();
+        //   }
+        //   else if(i=3){
+        //     $(testimonial[0],testimonial[1]).hide();
+        //     $(testimonial[2],testimonial[3]).show();
+        //   }
+          
+        // }
+        // $(".next").click(function(){
+        //   $(".testimonial-1, .testimonial-2").hide();
+        //   $(".testimonial-3, .testimonial-4").show();
+        // });
+
+        // $(".prev").click(function(){
+        //   $(".testimonial-3, .testimonial-4").hide();
+        //   $(".testimonial-1, .testimonial-2").show();
+        // });
+
+        var interval = setInterval(function()
+        {
+          
+
+          // for (i=0; i < testimonial.length; i++) 
+          // {
+          //     $(testimonial[0]).hide();
+          //     $(testimonial[1]).hide();
+
+          //     if(i==1){
+          //       $(testimonial[2]).hide();
+          //       $(testimonial[3]).hide();
+          //       $(testimonial[0]).show();
+          //       $(testimonial[1]).show();
+          //     }
+          //     if(i==3){
+          //       $(testimonial[0]).hide();
+          //       $(testimonial[1]).hide();
+          //       $(testimonial[2]).show();
+          //       $(testimonial[3]).show();
+                
+          //     }
+
+          // }
+
+          if(i<testimonial.length){
+            if(i==0){i++;}
+            if (i==1) {
+              $(testimonial[2]).hide();
+              $(testimonial[3]).hide();
+              $(testimonial[0]).show();
+              $(testimonial[1]).show();
+              i++;
+            }
+            if(i==2){i++;}
+            if (i==3) {
+              $(testimonial[0]).hide();
+              $(testimonial[1]).hide();
+              $(testimonial[2]).show();
+              $(testimonial[3]).show();
+              i++;
+            }
+
+            if (i==testimonial.length) {
+              i=0;
+            }
+          }
+    
+        }, 2000);
+
        
       })
     </script>
